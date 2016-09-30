@@ -1,0 +1,331 @@
+body {
+	font-family: "Roboto";
+	font-weight: 300;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1, h2, h3 {
+	font-family: "Merriweather";
+	color: #373737;
+}
+
+.main-wrapper {
+	min-width: 280px;
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+.top-header {
+	font-size: 0;
+}
+
+.contacts, .main-title, .search, .top-menu {
+	font-size: 16px;
+	vertical-align: middle;
+	display: inline-block;
+	margin: 0;
+}
+
+.features {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.contacts {
+	margin: 0 2% 0 0;
+}
+
+.contacts .telephone, .contacts .address {
+	color: #8f8f8f;
+	display: block;
+	line-height: 20px;
+}
+
+.contacts .telephone {
+	color: #00ab6b;
+	font-weight: 400;
+}
+
+.search {
+	text-align: right;
+}
+
+.search i {
+	margin: 0 1% 0 0;
+}
+
+.search #searchBar {
+	display: inline-block;
+	width: 80%;
+}
+
+.search #searchBar:focus {
+	outline: none;
+}
+
+.main-title {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 54px;
+}
+
+
+.top-menu {
+	width: 100%;
+	text-align: center;
+}
+
+.top-menu .menu {
+	padding: 0;
+}
+
+.top-menu .menu-item {
+	display: inline-block;
+	list-style: none;
+	padding: 0 3% 0 0;
+}
+
+.top-menu .menu-item a {
+	color: #8f8f8f;	
+}
+
+.top-menu .menu-item a:hover {
+	color: #00ab6b;
+}
+
+
+.top-menu .menu-item:last-child {
+	padding: 0;	
+}
+
+.top-menu .menu-item::after {
+	content: "|";
+	padding: 0 0 0 30%;	
+}
+
+.top-menu .menu-item:last-child::after {
+	content: "";
+	padding: 0;	
+}
+
+
+.goods-container {
+	font-size: 0;
+}
+
+.top-banner {
+	text-align: center;
+	margin: 10px 0 20px;
+	font-size: 0;
+}
+
+.top-banner_slide {
+	position: relative;
+	display: inline-block;
+	width: 30%;
+	font-size: 16px;
+}
+
+.top-banner_slide img{
+	width: 100%;
+	height: 150px;
+}
+
+.top-banner_slide .title {
+	position: absolute;
+	top: 0%;
+	width: 100%;
+	left: 0;
+	color: #fff;
+	line-height: 150px;
+}
+
+.top-banner_slide:nth-child(3n-1) {
+	margin: 0 4.5%;
+}
+
+.middle-menu .menu {
+	padding: 0;
+}
+
+.middle-menu .menu-item {
+	display: inline-block;
+	list-style: none;
+}
+
+.middle-menu .menu-item a {
+	border: 1px solid transparent;
+	padding: 5px 10px;
+	font-size: 16px;
+	color: #8f8f8f;
+}
+
+
+.middle-menu .menu-item a:hover {
+	border-color: #696969;
+}
+
+.side-menu, .goods-list {
+	font-size: 16px;
+ 	display: inline-block;
+ 	vertical-align: top;
+ }
+
+.side-menu {
+ 	width: 20%;
+}
+
+.plant-height .menu, .plant-care .menu, .plant-species .menu {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	border-bottom: 1px solid #e8e8e8;
+}
+
+.aside-title {
+	font-size: 16px;
+	font-weight: normal;
+}
+
+.side-menu .menu-item {
+	display: inline-block;
+	line-height: 25px;
+	font-size: 12px;
+	margin: 0 10px 0 0;
+}
+
+.side-menu .menu-item a {
+	color: #8f8f8f;
+}
+
+.side-menu .menu-item a:hover {
+	color: #696969;
+}
+
+.goods-list {
+ 	font-size: 0;
+ 	width: 80%;
+}
+
+.goods {
+ 	text-align: center;
+ 	font-size: 16px;
+ 	display: inline-block;
+ 	width: 30%;
+}
+
+.goods:nth-child(3n-1) {
+	margin: 2% 5% 0;
+}
+
+.goods img {
+	width: 100%;
+}
+
+.goods .about, .goods .order {
+	border: 1px solid #696969;
+	padding: 5px 10px;
+	color: #8f8f8f;
+}
+
+.goods .about:hover, .goods .order:hover {
+	background-color: #00ab6b;
+	border-color: #00ab6b;
+	color: #fff;
+}
+
+
+@media screen and (max-width: 930px) {
+	.main-title {
+		font-size: 32px;
+	}
+
+}
+
+@media screen and (max-width: 840px) {
+	.goods .about, .goods .order {
+		display: block;
+	}
+
+	.goods .order {
+		margin: 10px 0;
+	}
+}
+
+
+@media screen and (max-width: 790px) {
+	.top-banner_slide {
+		width: 49%;
+	}
+
+	.goods:nth-child(3n-1) {
+		margin: 0;
+	}
+
+	.top-banner_slide:nth-child(3n-1) {
+		margin: 0 0 0 1%;
+	}
+
+	.top-banner_slide:last-child {
+		width: 99%;
+	}
+	.goods {
+		width: 48%;
+	}
+
+	.goods:nth-child(2n) {
+		margin: 0 0 0 4%;
+	}
+
+	.side-menu {
+		width: 33%;
+	}
+	.goods-list {
+		width: 66%;
+	}
+}
+
+
+@media screen and (max-width: 730px) {
+	.contacts {
+		display: none;
+	}
+	
+}
+
+@media screen and (max-width: 590px) { 
+	.middle-menu {
+		display: none;
+	}
+
+	.side-menu {
+		display: none;
+	}
+	.goods-list {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 530px) {
+	.top-menu .menu-item {
+		padding: 0;
+		display: block;
+		line-height: 30px;
+		text-transform: uppercase;
+		border-bottom: 1px solid #e8e8e8;
+	}
+	.top-menu .menu-item::after {
+		padding: 0;
+		content: none;
+	}
+}
+
+@media screen and (max-width: 504px) {
+	.main-title {
+		font-size: 18px;
+	}
+}
